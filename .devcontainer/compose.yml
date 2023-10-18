@@ -1,0 +1,9 @@
+services:
+  devcontainer:
+    build:
+      context: .
+    volumes:
+      - ../..:/workspaces:rw,cached
+    init: true
+
+    command: sleep infinity
